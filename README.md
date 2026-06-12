@@ -24,3 +24,4 @@ it stores multiple values in single variable,
 easy processing usng loops 
 used in DSA,AIML,web devlomnt,data science
 2)indexing,slicing,append(),remove(),insert()
+3)for finding second highest,3rd,etc we use sort() function and -ve indexing 
