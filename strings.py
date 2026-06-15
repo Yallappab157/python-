@@ -1,5 +1,5 @@
 #01 indexing...
-'''name="python"
+name="python"
 print(name[0])
 print(name[-1])
 print(name[1:4])
@@ -35,7 +35,7 @@ Gmail="yallappa@gmail.com"
 if Gmail.endswith("@gmail.com"):
     print("Valid Gmail")
 else:
-    print("Not Valid") #o/p:Valid Gmail'''
+    print("Not Valid") #o/p:Valid Gmail
 
 #05 in operator....
 word="python"
