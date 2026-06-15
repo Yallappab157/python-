@@ -29,4 +29,6 @@ used in DSA,AIML,web devlomnt,data science
 
 # strings: 
 strings is a simply text ex;name="yallappa"
-indexing,slicing,upper.(),lower.(),len(),name.capatalize()
+indexing,slicing,name.upper(),name.lower(),len(),name.capatalize()
+replace(), endswith(), startswith(), 
+checking if a word is present in srting...
