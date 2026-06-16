@@ -1,5 +1,5 @@
 #01 storing marks of student and details....
-'''student={
+student={
     "name":"Ram",
     "marks":"80"
     }
@@ -20,7 +20,7 @@ print(student["marks"])
 if student["marks"]>=90:
     print("Distinction")
 else:
-    print("Not Distinction")#o/p: 80, Not Distinction'''
+    print("Not Distinction")#o/p: 80, Not Distinction
 
 #03
 students=[
@@ -38,4 +38,19 @@ print(students[0]["marks"])#o/p:90
 for student in students:
     if student["marks"]>=90:
         print(student["name"])#o/p:Ram , Hari
- 
+
+#04
+students=[
+    {"name":"Ram","marks":90},
+    {"name":"Shyam","marks":80},
+    {"name":"Hari","marks":92},
+     {"name":"Sita","marks":70},
+]
+count=0
+for student in students:
+    if student["marks"]<=90:
+        count=count+1
+print(count) #o/p:3
+for student in students:
+    if student["marks"]<=90:
+        print(student["name"])#o/p:Ram,shyam,sita
