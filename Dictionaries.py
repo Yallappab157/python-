@@ -1,4 +1,4 @@
-#01 storing marks of student and details....
+'''#01 storing marks of student and details....
 student={
     "name":"Ram",
     "marks":"80"
@@ -53,4 +53,40 @@ for student in students:
 print(count) #o/p:3
 for student in students:
     if student["marks"]<=90:
-        print(student["name"])#o/p:Ram,shyam,sita
+        print(student["name"])#o/p:Ram,shyam,sita'''
+
+#05 finding topper....
+students=[
+    {"name":"Ram","marks":90},
+    {"name":"Shyam","marks":80},
+    {"name":"Hari","marks":92},
+     {"name":"Sita","marks":70},
+]
+top_marks=0
+topper=""
+for student in students:
+    if student["marks"]>top_marks:
+        top_marks=student["marks"]
+        topper=student["name"]
+print(top_marks)
+print(topper)#o/p: 92,Hari
+#06 finding the less scorer.......
+less_marks=100
+lowscorer=""
+for student in students:
+    if student["marks"]<less_marks:
+        less_marks=student["marks"]
+        lowscorer=student["name"]
+print(less_marks)
+print(lowscorer)#o/p: 70, Sita 
+#07 for finding avg marks.....
+Total=0
+for student in students:
+    Total=Total+student["marks"]
+print(Total)
+count=0
+for student in students:
+    count=count+1
+print(count)
+Avg_marks=Total/count
+print(Avg_marks)#o/p:83.0(Avg_marks)
