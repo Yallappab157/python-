@@ -1,4 +1,4 @@
-'''#01 storing marks of student and details....
+#01 storing marks of student and details....
 student={
     "name":"Ram",
     "marks":"80"
@@ -53,7 +53,7 @@ for student in students:
 print(count) #o/p:3
 for student in students:
     if student["marks"]<=90:
-        print(student["name"])#o/p:Ram,shyam,sita'''
+        print(student["name"])#o/p:Ram,shyam,sita
 
 #05 finding topper....
 students=[
@@ -90,3 +90,67 @@ for student in students:
 print(count)
 Avg_marks=Total/count
 print(Avg_marks)#o/p:83.0(Avg_marks)
+
+#08. finding by name...
+students=[
+    {"name":"Ram","marks":90},
+    {"name":"Shyam","marks":80},
+    {"name":"Hari","marks":92},
+     {"name":"Sita","marks":70},
+]
+name="Hari"
+marks=""
+for student in students:
+    if student["name"]=="Hari":
+        name=student["name"]
+        marks=student["marks"]
+print(marks)#o/p:92
+#for others.. ex...
+name="Sita"
+marks=""
+for student in students:
+    if student["name"]==name:
+        name=student["name"]
+        marks=student["marks"]
+print(marks)#o/p:70
+
+# 09 finding distinctions and printing names...
+students=[
+    {"name":"Ram","marks":90},
+    {"name":"Shyam","marks":80},
+    {"name":"Hari","marks":92},
+     {"name":"Sita","marks":70},
+]
+name=""
+count=0
+for student in students:
+    if student["marks"]>=90:
+        count=count+1
+        print(student["name"])
+print(count)#o/p:Ram, Hari, 2
+# 10 printing marks and name together...
+name=""
+count=0
+for student in students:
+    if student["marks"]>=90:
+        count=count+1
+        print(student["name"],student["marks"])
+print(count)#o/p:Ram 90, Hari 92, 2
+
+#11 upadating marks....
+students=[
+    {"name":"Ram","marks":90},
+    {"name":"Shyam","marks":80},
+    {"name":"Hari","marks":92},
+     {"name":"Sita","marks":70},
+]
+for student in students:
+    if student["name"]=="Shyam":
+        student["marks"]=85
+
+print(students)#o/p:{'name': 'Shyam', 'marks': 85}
+
+for student in students:
+    if student["name"]=="Sita":
+        students.remove(student)
+print(students)#o/p: without sita it comes
