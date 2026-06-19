@@ -1,4 +1,4 @@
-#01 storing marks of student and details....
+'''#01 storing marks of student and details....
 student={
     "name":"Ram",
     "marks":"80"
@@ -153,4 +153,16 @@ print(students)#o/p:{'name': 'Shyam', 'marks': 85}
 for student in students:
     if student["name"]=="Sita":
         students.remove(student)
-print(students)#o/p: without sita it comes
+print(students)#o/p: without sita it comes'''
+# 12 using keys to find values .....
+student={
+    "name":"Hari",
+    "marks":92,
+    "city":"Banglore"
+}
+print(student.keys())#o/p:'name','marks','city'
+print(student.values())#o/p: 'Hari','92','Banglore'
+print(student.items())#o/p:('name', 'Hari'), ('marks', 92), ('city', 'Banglore')
+print(student.get("name"))#o/p:Hari
+print(student.get("city"))#o/p:Banglore
+print(student.get("age"))#o/p:None
