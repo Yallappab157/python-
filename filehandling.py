@@ -24,3 +24,17 @@ file.write(" ,Yalla")
 with open("data.txt","r") as file:
     data=file.read()
     print(data)#o/p:Ram , Hari, Sita ,Yalla
+
+#05 read lines.....
+file=open("data.txt","r")
+data=file.readlines()
+print(data)#o/p:['Ram , Hari, Sita ,Yalla']
+file.close()
+
+file=open("data.txt","r")
+print(file.readlines())
+file.close()#o/p:['Ram , Hari, Sita ,Yalla']
+
+file=open("data.txt","r")
+print(file.readline())
+file.close()#o/p:Ram , Hari, Sita ,Yalla
