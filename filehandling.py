@@ -38,3 +38,19 @@ file.close()#o/p:['Ram , Hari, Sita ,Yalla']
 file=open("data.txt","r")
 print(file.readline())
 file.close()#o/p:Ram , Hari, Sita ,Yalla
+
+#06 count lines....
+file=open("data.txt","r")
+data=file.read()
+print(len(data))
+file.close()
+name=input("Enter the name:")
+if name in data:
+    print("Found")
+else:
+    print("Not Found")#o/p: Hari (Found), len=19
+#07 len() for list...
+data=["Ram","Hari","Sita"]
+print(len(data))#o/p:3
+data=["Ram,Hari,Sita"]
+print(len(data))#o/p:1
