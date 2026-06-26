@@ -1,4 +1,4 @@
-#01
+'''#01
 class student:
     pass
 student1=student()
@@ -46,3 +46,33 @@ student1=student("Ram",90)
 student2=student("Hari",95)
 student1.display()#o/p:Ram, 90
 student2.display()#o/p: Hari, 95
+
+# using append ....
+students=[]
+student1=student("Ram",90)
+student2=student("Hari",95)
+student3=student("Sita",80)
+students.append(student1)
+students.append(student2)
+students.append(student3)
+for student in students:
+    student.display()#o/p:Ram 90,Hari 95,Sita 80
+'''
+# using the loops.....
+class student:
+    def __init__(self,name,marks):
+        self.name=name
+        self.marks=marks
+
+    def display(self):
+        print(self.name)
+        print(self.marks)
+students=[]
+for i in range(3):
+    name=input("Enter the name of the student:")
+    marks=int(input("Enter the marks of the students:"))
+    student_obj=student(name,marks)
+    students.append(student_obj)
+
+for student in students:
+    student.display()#o/p:yalla 92,sharana 90,sneha 93
