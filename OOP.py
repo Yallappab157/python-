@@ -1,4 +1,4 @@
-'''#01
+#01
 class student:
     pass
 student1=student()
@@ -57,7 +57,7 @@ students.append(student2)
 students.append(student3)
 for student in students:
     student.display()#o/p:Ram 90,Hari 95,Sita 80
-'''
+
 # using the loops.....
 class student:
     def __init__(self,name,marks):
@@ -76,3 +76,23 @@ for i in range(3):
 
 for student in students:
     student.display()#o/p:yalla 92,sharana 90,sneha 93
+
+# encapsulation.... 
+class student:
+    def __init__(self,name,marks):
+        self.name=name
+        self.marks=marks
+    def set_marks(self,marks):
+        if 0<= marks<=100:
+            self.marks=marks
+        else:
+            print("invalid marks")
+    def display(self):
+        print(self.name,self.marks)
+
+student1=student("Ram",90)
+student1.display()
+student1.set_marks(95)
+student1.display()
+student1.set_marks(-10)
+student1.display()#o/p:Ram 90, Ram 95, invalid marks,Ram 95
