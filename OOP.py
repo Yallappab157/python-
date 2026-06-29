@@ -1,4 +1,4 @@
-#01
+'''#01
 class student:
     pass
 student1=student()
@@ -95,4 +95,23 @@ student1.display()
 student1.set_marks(95)
 student1.display()
 student1.set_marks(-10)
-student1.display()#o/p:Ram 90, Ram 95, invalid marks,Ram 95
+student1.display()#o/p:Ram 90, Ram 95, invalid marks,Ram 95'''
+
+# inheritance....
+class Person:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+
+class Student(Person):
+    def __init__(self,name,age,marks):
+        super(). __init__(name,age)
+        self.marks=marks
+
+    def display(self):
+        print(self.name)
+        print(self.age)
+        print(self.marks)
+
+student1=Student("Ram",19,90)
+student1.display()#o/p:Ram,19,90
