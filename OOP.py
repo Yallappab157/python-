@@ -115,3 +115,17 @@ class Student(Person):
 
 student1=Student("Ram",19,90)
 student1.display()#o/p:Ram,19,90
+
+class Teacher(Person):
+    def __init__(self,name,age,salary):
+        super(). __init__(name,age)
+        self.salary=salary
+    
+    def display(self):
+        print(self.name)
+        print(self.age)
+        print(self.salary)
+
+Teacher1=Teacher("Ravi",35,50000)
+Teacher1.display()
+        
