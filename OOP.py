@@ -95,7 +95,7 @@ student1.display()
 student1.set_marks(95)
 student1.display()
 student1.set_marks(-10)
-student1.display()#o/p:Ram 90, Ram 95, invalid marks,Ram 95'''
+student1.display()#o/p:Ram 90, Ram 95, invalid marks,Ram 95
 
 # inheritance....
 class Person:
@@ -127,5 +127,37 @@ class Teacher(Person):
         print(self.salary)
 
 Teacher1=Teacher("Ravi",35,50000)
-Teacher1.display()
+Teacher1.display()'''
         
+# polymorphism....
+class Dog:
+    def sound(self):
+        print("Bark")
+class Cat:
+    def sound(self):
+        print("Meow")
+class Cow:
+    def sound(self):
+        print("Moo")
+
+dog=Dog()
+cat=Cat()
+cow=Cow()
+
+dog.sound()
+cat.sound()
+cow.sound()
+
+class Peakock:
+    def sound(self):
+        print("koo")
+
+class Crow:
+    def sound(self):
+        print("kaaa")
+
+peakock=Peakock()
+crow=Crow()
+
+peakock.sound()
+crow.sound()
