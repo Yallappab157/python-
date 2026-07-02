@@ -127,7 +127,7 @@ class Teacher(Person):
         print(self.salary)
 
 Teacher1=Teacher("Ravi",35,50000)
-Teacher1.display()'''
+Teacher1.display()
         
 # polymorphism....
 class Dog:
@@ -161,3 +161,25 @@ crow=Crow()
 
 peakock.sound()
 crow.sound()
+'''
+# method overriding
+class Person:
+    def introduce(self):
+        print("I am person")
+
+class Student(Person):
+    def introduce(self):
+        print("I am student")
+student=Student()
+student.introduce()
+
+# super() method in overridding
+class Person:
+    def introduce(self):
+        print(" I am a person")
+class Student(Person):
+    def introduce(self):
+        super().introduce()
+        print("I am a student")
+student=Student()
+student.introduce()         
