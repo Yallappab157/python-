@@ -161,7 +161,7 @@ crow=Crow()
 
 peakock.sound()
 crow.sound()
-'''
+
 # method overriding
 class Person:
     def introduce(self):
@@ -182,4 +182,27 @@ class Student(Person):
         super().introduce()
         print("I am a student")
 student=Student()
-student.introduce()         
+student.introduce()   
+'''
+# method overloading....
+def add(a,b=0,c=0):
+    print(a+b+c)
+add(5)
+add(5,10)
+add(5,10,15)
+ # calculator using method overloading...
+class Calculator:
+   def add(a,b=0,c=0):
+     print("Sum:",a+b+c)
+calculator=Calculator()
+add(5)
+add(5,10)
+add(5,10,15)
+
+class Calculator:
+   def add(self,a,b=0,c=0):
+      print("sum:",a + b + c)
+calc=Calculator()
+calc.add(10)
+calc.add(10,20)
+calc.add(10,20,30)#o/p:sum: 10,sum: 30,sum: 60
