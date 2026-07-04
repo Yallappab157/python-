@@ -183,7 +183,7 @@ class Student(Person):
         print("I am a student")
 student=Student()
 student.introduce()   
-'''
+
 # method overloading....
 def add(a,b=0,c=0):
     print(a+b+c)
@@ -206,3 +206,31 @@ calc=Calculator()
 calc.add(10)
 calc.add(10,20)
 calc.add(10,20,30)#o/p:sum: 10,sum: 30,sum: 60
+
+# METHOD OVERLOADING...
+from abc import ABC, abstractmethod
+
+class Animal(ABC):
+   @abstractmethod
+   def sound(self):
+      pass
+   
+class Dog(Animal):
+   def sound(self):
+      print("Bark")
+dog=Dog()
+dog.sound()#o/p:Bark
+'''
+#
+from abc import ABC, abstractmethod
+
+class Animal(ABC):
+   @abstractmethod
+   def sound(self):
+      pass
+   
+class Dog(Animal):
+      pass
+dog=Dog()
+dog.sound()#o/p:error
+

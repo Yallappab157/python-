@@ -80,3 +80,9 @@ same thing which as different outputs for example all animals and birds as sound
 ---METHOD OVERRIDING---
 parental class is overrinding by child class
 super(): this method in overrinding will help to print both the parental class and child class
+--- METHOD OVERLoADING....
+method overloading means using the same method with different numbers of arguments
+for example: a,b=0,c=0
+---ABSTRACTION...
+means hiding the implementaion details and only showing the imopratant details or features...
+
