@@ -220,7 +220,7 @@ class Dog(Animal):
       print("Bark")
 dog=Dog()
 dog.sound()#o/p:Bark
-'''
+
 #
 from abc import ABC, abstractmethod
 
@@ -233,4 +233,42 @@ class Dog(Animal):
       pass
 dog=Dog()
 dog.sound()#o/p:error
+'''
+# multiple inheritance....
+class Father:
+    def care(self):
+        print("Father cares")
+class Employee:
+    def work(self):
+        print("Employee works")
+class Son(Father,Employee):
+    pass
+son=Son()
+son.care()
+son.work()#o/p:Father cares, Employee works
 
+# multilevel inheritance...
+class Grandfather:
+    def land(self):
+        print("Grandfather has land")
+class Father(Grandfather):
+    def house(self):
+        print("Father has house")
+class Son(Father):
+    pass
+son=Son()
+son.land()
+son.house()#o/p:Grandfather has land, Father has house
+
+# Hierarchical inheritance....
+class Animal:
+    def eat(self):
+        print("Animal eats")
+class Dog(Animal):
+    pass
+class Cat(Animal):
+    pass
+dog=Dog()
+cat=Cat()
+dog.eat()
+cat.eat()#o/p:Animal eats, Animal eats
