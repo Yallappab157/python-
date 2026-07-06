@@ -233,7 +233,7 @@ class Dog(Animal):
       pass
 dog=Dog()
 dog.sound()#o/p:error
-'''
+
 # multiple inheritance....
 class Father:
     def care(self):
@@ -272,3 +272,36 @@ dog=Dog()
 cat=Cat()
 dog.eat()
 cat.eat()#o/p:Animal eats, Animal eats
+'''
+# Hybrid Inheritance...
+class Grandfather:
+    def land(self):
+        print("Grandfather has land")
+class Father(Grandfather):
+    def house(self):
+        print("Father has House")
+class Son(Father):
+    pass
+class Daughter(Father):
+    pass
+
+son=Son()
+daughter=Daughter()
+son.land()
+son.house()
+daughter.land()
+daughter.house()#o/p:Grandfather has land,Father has House,Grandfather has land,Father has House
+
+# MRO(method reasolution order)...
+class A:
+    def show(self):
+        print("A")
+class B:
+    def show(self):
+        print("B")
+class C(A,B):
+    pass
+
+obj=C()
+obj.show()#o/p:A
+print(C.mro())#o/p:[<class '__main__.C'>, <class '__main__.A'>, <class '__main__.B'>, <class 'object'>]
