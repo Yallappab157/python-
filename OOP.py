@@ -1,4 +1,4 @@
-'''#01
+#01
 class student:
     pass
 student1=student()
@@ -272,7 +272,7 @@ dog=Dog()
 cat=Cat()
 dog.eat()
 cat.eat()#o/p:Animal eats, Animal eats
-'''
+
 # Hybrid Inheritance...
 class Grandfather:
     def land(self):
