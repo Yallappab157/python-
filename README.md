@@ -108,3 +108,7 @@ A module is a python file that contains functions , classes, and variables, whic
 a package is a folder that contains one or more python modules and used to organize related code.
 uses: to organize code neeatly
 reuses modules ect
+
+# advanced functions in python......
+1) *args:
+    allows a function to accept any number of positional arguements
