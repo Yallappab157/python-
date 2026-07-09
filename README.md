@@ -112,3 +112,5 @@ reuses modules ect
 # advanced functions in python......
 1) *args:
     allows a function to accept any number of positional arguements
+2)**kwargs:
+  allows a function to accept any number of keyword arguments.
