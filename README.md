@@ -112,5 +112,11 @@ reuses modules ect
 # advanced functions in python......
 1) *args:
     allows a function to accept any number of positional arguements
-2)**kwargs:
+2) **kwargs:
   allows a function to accept any number of keyword arguments.
+3) lambda function:
+  A lambda function is a small anonymouse function that can have any number of arguments but only one expression.
+4) map():
+   map() is used to apply a function to every9 element in an iterable (like a list or tuple)
+   iif we double marks of students we use map()
+   
