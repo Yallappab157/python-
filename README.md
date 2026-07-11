@@ -119,4 +119,9 @@ reuses modules ect
 4) map():
    map() is used to apply a function to every9 element in an iterable (like a list or tuple)
    iif we double marks of students we use map()
-   
+5) filter():
+  is used to select only those elements that satisfy a given condition.
+
+6) reduce():
+  is used to reduce all the elements of an iterable into a single value.
+  

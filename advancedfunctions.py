@@ -31,7 +31,7 @@ def details(**kwargs):
     for key, value in kwargs.items():
         print(key,":",value)
 details(name="Rahul",age=20,branch="CSE")#o/p:name : Rahul,age : 20,branch : CSE
-'''
+
 # lambda function:
 square=lambda x: x*x
 print(square(5))
@@ -41,3 +41,19 @@ print(square(10))#o/p:25,100
 marks=[10,20,30,40]
 result=list(map(lambda x: x*2, marks))
 print(result)#o/p:[20, 40, 60, 80]
+
+# filter():
+marks=[10,25,30,15,40]
+result=list(filter(lambda x: x>=20,marks))
+print(result)#o/p:[25, 30, 40]
+'''
+# reduce():
+from functools import reduce
+marks=[10,20,30,40]
+result=reduce(lambda x,y: x+y,marks)
+print(result)# o/p:100
+
+from functools import reduce
+marks=[10,20,30,40]
+result=reduce(lambda x,y: x*y,marks)
+print(result)# o/p:24000
