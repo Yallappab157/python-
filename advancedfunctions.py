@@ -46,7 +46,7 @@ print(result)#o/p:[20, 40, 60, 80]
 marks=[10,25,30,15,40]
 result=list(filter(lambda x: x>=20,marks))
 print(result)#o/p:[25, 30, 40]
-'''
+
 # reduce():
 from functools import reduce
 marks=[10,20,30,40]
@@ -57,3 +57,23 @@ from functools import reduce
 marks=[10,20,30,40]
 result=reduce(lambda x,y: x*y,marks)
 print(result)# o/p:24000
+
+# Recursion:
+def hello():
+    print("Hello")
+    hello()
+hello()#O/P:RecursionError: maximum recursion depth exceeded
+'''
+def countdown(n):
+    if n==0:
+        return
+    print(n)
+    countdown(n-1)
+countdown(5)#o/p:5 ,4 , 3, 2, 1
+
+# factorial number:
+def factorial(n):
+    if n==1:
+        return 1
+    return n*factorial(n-1)
+print(factorial(5))#o/p:120

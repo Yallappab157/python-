@@ -124,4 +124,6 @@ reuses modules ect
 
 6) reduce():
   is used to reduce all the elements of an iterable into a single value.
+7) Recursion:
+  Recursion is a technique in which a function calls itself until a stopping condition is met. used for factorial,fibonacci......
   
