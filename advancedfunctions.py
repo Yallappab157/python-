@@ -63,7 +63,7 @@ def hello():
     print("Hello")
     hello()
 hello()#O/P:RecursionError: maximum recursion depth exceeded
-'''
+
 def countdown(n):
     if n==0:
         return
@@ -77,3 +77,21 @@ def factorial(n):
         return 1
     return n*factorial(n-1)
 print(factorial(5))#o/p:120
+'''
+# Iteration:
+marks=[10,20,30]
+it=iter(marks)
+print(it)# o/p:<list_iterator object at 0x72e2584de140>
+
+marks=[10,20,30]
+it=iter(marks)
+print(next(it))
+print(next(it))
+print(next(it))#o/p:10,20,30
+
+marks=[10,20,30]
+it=iter(marks)
+print(next(it))
+print(next(it))
+print(next(it))
+print(next(it))#o/p:StopIteration
