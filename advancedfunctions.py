@@ -1,4 +1,5 @@
-'''# *args:
+'''
+# *args:
 def display(*args):
     print(args)
 display(10)
@@ -77,7 +78,7 @@ def factorial(n):
         return 1
     return n*factorial(n-1)
 print(factorial(5))#o/p:120
-'''
+
 # Iteration:
 marks=[10,20,30]
 it=iter(marks)
@@ -95,3 +96,21 @@ print(next(it))
 print(next(it))
 print(next(it))
 print(next(it))#o/p:StopIteration
+'''
+# Generators:
+def numbers():
+    yield 10
+    yield 20
+    yield 30
+
+gen = numbers()
+print(next(gen))
+print(next(gen))
+print(next(gen))#o/p:10,20,30
+
+# generator using loop:
+def numbers():
+    for i in range(1,6):
+        yield i
+for value in numbers():
+    print(value)#o/p:1,2,3,4,5
