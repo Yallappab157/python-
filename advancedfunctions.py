@@ -114,3 +114,5 @@ def numbers():
         yield i
 for value in numbers():
     print(value)#o/p:1,2,3,4,5
+
+#Decorators:
