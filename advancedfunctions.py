@@ -96,7 +96,7 @@ print(next(it))
 print(next(it))
 print(next(it))
 print(next(it))#o/p:StopIteration
-'''
+
 # Generators:
 def numbers():
     yield 10
@@ -116,3 +116,32 @@ for value in numbers():
     print(value)#o/p:1,2,3,4,5
 
 #Decorators:
+def greet(func):
+    def inner ():
+        print("Good Morning")
+        func()
+        print("Thank You")
+    return inner
+@greet
+def message():
+    print("Welcome to python")
+
+message()
+'''
+# List comprehension:
+#normal way:
+numbers=[]
+for i in range(1,6):
+    numbers.append(i)
+print(numbers)#o/p:[1, 2, 3, 4, 5]
+# using the list comprehension:
+numbers=[i for i in range(1,6) ]
+print(numbers)#o/p:[1, 2, 3, 4, 5]
+
+# for square numbers:
+squares=[i*i for i in range(1,6)]
+print(squares)#o/p:[1, 4, 9, 16, 25]
+
+# using the if condition:
+numbers=[i for i in range(1,11) if i%2==0]
+print(numbers)#o/p:[2, 4, 6, 8, 10]

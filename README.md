@@ -135,4 +135,7 @@ reuses modules ect
 10) Decorator:
   A decorator is used to an existing function without changing its original code......
 11) Virtual environment():
-  is an isolated python environment that keeps the packages of one project   
+  is an isolated python environment that keeps the packages of one project( inside the project virtual environment)
+12) List comprehension:
+   It is shorter way to create a list using a loop.
+      
