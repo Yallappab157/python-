@@ -127,7 +127,7 @@ def message():
     print("Welcome to python")
 
 message()
-'''
+
 # List comprehension:
 #normal way:
 numbers=[]
@@ -145,3 +145,14 @@ print(squares)#o/p:[1, 4, 9, 16, 25]
 # using the if condition:
 numbers=[i for i in range(1,11) if i%2==0]
 print(numbers)#o/p:[2, 4, 6, 8, 10]
+'''
+# list comprehension with condition:
+#normal way:
+even=[]
+for i in range(1,11):
+    if i % 2 ==0:
+        even.append(i)
+print(even)#o/p:[2, 4, 6, 8, 10]
+#list comprehension:
+even=[i for i in range(1,11) if  i%2==0]
+print(even)#o/p:[2, 4, 6, 8, 10]
