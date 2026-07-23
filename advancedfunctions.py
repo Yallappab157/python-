@@ -140,10 +140,7 @@ print(numbers)#o/p:[1, 2, 3, 4, 5]
 
 # for square numbers:
 squares=[i*i for i in range(1,6)]
-print(squares)#o/p:[1, 4, 9, 16, 25]
-
-# using the if condition:
-numbers=[i for i in range(1,11) if i%2==0]
+ 
 print(numbers)#o/p:[2, 4, 6, 8, 10]
 '''
 # list comprehension with condition:
@@ -156,3 +153,23 @@ print(even)#o/p:[2, 4, 6, 8, 10]
 #list comprehension:
 even=[i for i in range(1,11) if  i%2==0]
 print(even)#o/p:[2, 4, 6, 8, 10]
+
+#dictionary comprehensive:
+square={i:i*i for i in range(1,6)}
+print(square)#o/p:{1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+
+# Set comprehension:
+square_set={i*i for i in range(1,6)}
+print(square_set)#o/p:{1, 4, 9, 16, 25}
+# Generator expression:
+numbers=(i*i for i in range(1,6))
+for value in numbers:
+    print(value)#o/p:1,4,9,16,25
+
+# closures :
+def outer(message):
+    def inner():
+        print(message)
+    return inner
+greet=outer("hello, python")
+greet()#o/p:hello, python

@@ -138,4 +138,14 @@ reuses modules ect
   is an isolated python environment that keeps the packages of one project( inside the project virtual environment)
 12) List comprehension:
    It is shorter way to create a list using a loop.
+13) List comprehension:
+   A short way to create a list by adding only that satisfy a condition.
+14) Dictionary comprehension:
+   a short way to create a dictionary in one line.
+15) Set comprehension:
+   A short way to create a set in one line . A set stores only unique values.
+16) Generator expression:
+   A short way to create a generator using parentheses() instead of square brackets[]
+17) Closure:
+   A closure is an inner function that remebers the variables of the outer function even after the outer functionn has  finished
       
